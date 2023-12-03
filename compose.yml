@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  streaming-apache-app:
+    image: httpd:latest
+    container_name: streaming-apache-app
+    ports:
+      - "80:80"
+    volumes:
+      - ./vol:/usr/local/apache2/htdocs
